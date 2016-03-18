@@ -1,9 +1,3 @@
-/*
-nav, header, .WhoWeAre, .Video, .Team, .Services, .JoinUs, .OurWorks, .CompanyLogos, .Testimonials, .Blog, .Newsletter, .ContactUs, footer {
-    width: 1600px;
-}
-*/
-
 nav a {
     font-family: "Source Sans Pro";
     font-size: 24px;
@@ -37,9 +31,21 @@ body {
     top: 0px; 
     padding: 30px; 
     color: #ffffff;
-    margin: auto;
+    margin-left: auto;
 }
 
 .content img {
     width: 75%;
+}
+
+.navbuttons div {
+    height: 100px;
+    background-color: #810a2f;
+    color: white;
+    display: inline-block;
+    width: 50%;
+}
+
+.navbuttons div:nth-of-type(2) {
+    background-color: #0f8178;
 }
