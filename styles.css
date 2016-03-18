@@ -1,0 +1,45 @@
+/*
+nav, header, .WhoWeAre, .Video, .Team, .Services, .JoinUs, .OurWorks, .CompanyLogos, .Testimonials, .Blog, .Newsletter, .ContactUs, footer {
+    width: 1600px;
+}
+*/
+
+nav a {
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    color: #f7f7f7;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body { 
+    margin: 0px; 
+    background: #ffffff; 
+}
+
+.bg_container {
+    height: 450px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.bg { 
+    width: 100%; 
+    height: 900px; 
+}
+
+.content { 
+    position: absolute; 
+    top: 0px; 
+    padding: 30px; 
+    color: #ffffff;
+    margin: auto;
+}
+
+.content img {
+    width: 75%;
+}
