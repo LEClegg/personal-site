@@ -1,11 +1,11 @@
 .navbuttons a {
-    font-family: "Source Sans Pro";
-    font-size: 24px;
+    font-family: "Avenir";
+    font-size: 30px;
     color: #f7f7f7;
     text-decoration: none;
     line-height: 100px;
     vertical-align: middle;
-    text-align: center;
+    padding-left: 45%;
 }
 
 .navbuttons a:hover {
@@ -31,13 +31,14 @@ body {
 .content { 
     position: absolute; 
     top: 0px; 
-    padding: 30px; 
     color: #ffffff;
-    margin-left: auto;
+    height: 450px;
+    overflow: hidden;
 }
 
 .content img {
-    width: 75%;
+    width: 100%;
+    height: auto;
 }
 
 .navbuttons div {
