@@ -56,17 +56,52 @@ body {
 }
 */
 
+.info p, .info h1, .info h2, .info a {
+    font-family: "Avenir";
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    color: #484142;
+    line-height: 24px;
+}
+
+.info h1 {
+    font-size: 30px;
+    color: #6e343a;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #6e343a;
+    font-weight: 100;
+}
+
+.info a {
+    color: #346e68;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
 .banner-text {
     font-family: "Avenir";
-    font-size: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
+    font-size: 60px;
+    padding-left: 40px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    color: #c7c1c2;
 }
 
 .info {
     display: inline-block;
     width: 50%;
-    height: 600px;
+    height: 540px;
     vertical-align: top;
 }
 
@@ -163,8 +198,7 @@ body {
   background-color: #f7f7f7;
     display: inline-block;
     width: 50%;
-    color: #f7f7f7;
-    height: 600px;
+    height: 540px;
     vertical-align: top;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -205,4 +239,37 @@ body {
 .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #346e68;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
 }
