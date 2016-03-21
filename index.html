@@ -7,10 +7,11 @@
         <title>Lauren Clegg VO</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="styles-mobile.css">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+<!--        <link rel="stylesheet" type="text/css" href="styles-mobile.css">-->
+        <script src="jquery-2.2.1.min.js"></script>
     </head>
 <body>
+<!--HEADER-->
     <header>
     <div class="bg_container">
         <iframe class="bg" src="https://www.youtube.com/v/q3Srzw6M9Y4?autoplay=1&loop=1&autohide=1&playlist=q3Srzw6M9Y4&showinfo=0" frameborder="0" allowfullscreen>
@@ -18,23 +19,17 @@
     </div>
     <div class="content">
         <img src="assets/banner.png"/>
-<!--
-        <nav>
-            <a href="#about">about</a>
-            <a href="#work">work</a>
-            <a href="#contact">contact</a>
-        </nav>
--->
     </div>
         <div class="navbuttons">
         <a class="hvr-sweep-to-left" href="#about">
             about
-        </a><a class="hvr-sweep-to-right">
+        </a><a class="hvr-sweep-to-right" href="#contact">
             contact
         </a>
         </div>
     </header>
-    <div class="about" id="about">
+<!--ABOUT-->
+    <div hidden class="about" id="about">
         <div class="hvr-sweep-to-bottom"><p class="banner-text">about me +<br/> my work</p></div><div class="info">
         <h1>bio</h1>
         <p>
@@ -43,7 +38,7 @@
         <h1>work</h1>
         <h2>voiceovers</h2>
         <p>
-            Need a voiceover for your video? Want to bring an animated charater to life? I just may have the voice for you.
+            Need a voiceover for your video? Want to bring an animated charater to life? <br/>I may just have the voice for you.
         </p>
         <a class="hvr-underline-from-left" href="#">hear my pipes</a>
         <h2>screencasts</h2>
@@ -53,9 +48,17 @@
         <a class="hvr-underline-from-left" href="#">learn something new</a>
         </div>
     </div>
-<!--
-    <div class="contact">
+<!--CONTACT-->
+    <div hidden class="contact" id="contact">
+        <div class="info">
+        <h1>let's get in touch</h1>
+        <p>
+            this is where my form will go 
+        </p>
+        <a class="hvr-underline-from-left" href="#">submit</a>
+    </div><div class="hvr-sweep-to-bottom"><p class="banner-text">contact me</p></div>
     </div>
--->
-</body>
+<!--JS files-->
+    <script src="actions.js"></script>
+    </body>
 </html>
